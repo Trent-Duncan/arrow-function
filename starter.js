@@ -1,5 +1,5 @@
-// First and last name
-// Current date
+// Trent Duncan
+// 4/28/2026
 // Convert Traditional Functions to Arrow Functions
 
 // TODO 1: Rewrite each traditional function as an arrow function
@@ -10,25 +10,42 @@
 function convertToMiles(kilometers) {
   return kilometers * 0.621371;
 }
+const convertToMiles = (kilometers) => {
+  return kilometers * 0.621371;
+};
+
+// Call the convertToMiles ARROW function
+const numKilometers = 100;
+console.log(convertToMiles(numKilometers));
+
 
 // Calculates perimeter of a rectangle
 // Traditional function
 function calcRectPerimeter(length, width) {
   return 2 * (length + width);
 }
+const calcRectPerimeter = (length, width) => {
+  return 2 * (length + width);
+};
+
+
 
 // Builds a product description using a template string
 // Traditional function
 function describeProduct(name, price) {
   return `The ${name} costs $${price.toFixed(2)}.`;
 }
-
+const describeProduct = (name, price) => {
+  return `The ${name} costs $${price.toFixed(2)}.`;
+};
 // Display user profile
 // Traditional function
 function showUserProfile(name, age, city) {
   return `${name} is ${age} years old and lives in ${city}.`;
 }
-
+const showUserProfile = (name, age, city) => {
+  return `${name} is ${age} years old and lives in ${city}.`;
+};
 // TODO 3: REWRITE YOUR FUNCTIONS AS ARROW FUNCTIONS BELOW THIS LINE
 
 
